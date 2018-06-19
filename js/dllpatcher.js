@@ -235,6 +235,7 @@
 
         reader.onload = function (e) {
             var found = false;
+            self.errorDiv.empty();
             for (var i = 0; i < self.patchers.length; i++) {
                 var patcher = self.patchers[i];
                 patcher.destroyUI();
